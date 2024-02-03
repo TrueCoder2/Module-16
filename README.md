@@ -4,6 +4,6 @@
 
 #### Git link:
 ```
-git clone https://github.com/KalobTaulien/django-101.git
+https://github.com/TrueCoder2/Module-16/tree/master
 ```
 
