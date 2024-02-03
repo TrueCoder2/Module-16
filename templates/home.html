@@ -1,19 +1,20 @@
 {% extends "base.html" %}
 {% load thumbnail %}
 
-{% block title %}My super awesome homepage{% endblock %}
+{% block title %}Module 16{% endblock %}
 
 {% block body %}
 
-    <div class="row">
+    <div class="row" >
         {% for post in posts %}
             <div class="col-sm-6 col-md-3">
-                <div class="card my-4">
+                <div class="card my-4" style="background-color: rgb(39, 37, 37);">
                     {% thumbnail post.image "200x200" crop="center" as im %}
-                        <img src="{{ im.url }}" class="card-img-top" alt="...">
+                        <img src="{{ im.url}}"  alt="...">
+                        {{im.url}}
                     {% endthumbnail %}
                     <div class="card-body">
-                        <p class="card-text">{{ post.text }}</p>
+                        <p class="card-text" style="color: azure;">{{ post.text }}</p>
                         <a href="{% url 'feed:detail' post.id %}" class="btn btn-primary">View Full Image</a>
                     </div>
                 </div>

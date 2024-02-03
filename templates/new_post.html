@@ -4,11 +4,11 @@
 
 {% block body %}
     <form method="POST" action="" enctype="multipart/form-data" class="col-sm-4 offset-4 py-5 my-5">
-        <h2>Upload an image!</h2>
-        {% csrf_token %}
-        {{ form.as_p }}
+        <h2 style="color:white;">Upload an image!</h2>
+     {% csrf_token %}
+        <h4 style="color: rgb(218, 58, 58);">{{ form.as_p }}</h4>
         <div>
-            <button type="submit" class="btn btn-lg btn-success">Submit form</button>
+            <button type="submit" class="btn btn-lg btn-primary">Submit form</button>
         </div>
     </form>
 {% endblock %}

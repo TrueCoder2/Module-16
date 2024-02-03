@@ -3,10 +3,10 @@
 {% block title %}{{ object.text }}{% endblock %}
 
 {% block body %}
-    <div class="row">
-        <div class="col-sm-10 offset-sm-1 py-5">
-            {{ object.text }}
-            <img src="{{ object.image.url }}" class="img-fluid rounded">
+    <div class="row" >
+        <div class="col-sm-10 offset-sm-1 py-5 flex justify-content-center align-items-center" style="height:100vh">
+            <h2 style="margin-bottom: 20px;color: white;">{{ object.text }}</h2>
+            <img src="{{ object.image.url }}" class="img-fluid rounded" style="height: 400px;">
         </div>
     </div>
 {% endblock %}
